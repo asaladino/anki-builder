@@ -10,11 +10,7 @@ Install the project dependencies with Poetry from the repository root:
 poetry install
 ```
 
-This repository configures Poetry to create the virtual environment at `.venv/`. After `poetry install` completes, choose the `.venv/bin/python` interpreter in VS Code/Codespaces so the editor can resolve imports for installed dependencies such as `click`:
-
-1. Open the command palette.
-2. Run **Python: Select Interpreter**.
-3. Select the interpreter at `.venv/bin/python`.
+This repository configures Poetry to create the virtual environment at `.venv/`, and VS Code is configured to use `.venv/bin/python` as its Python interpreter. After `poetry install` completes, the Codespaces editor should be able to resolve imports for installed dependencies such as `click`.
 
 Run the CLI with Poetry:
 
