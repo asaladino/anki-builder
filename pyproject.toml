@@ -13,8 +13,12 @@ dependencies = [
     "requests (>=2.34.2,<3.0.0)",
     "genanki (>=0.13.1,<0.14.0)",
     "python-dotenv (>=1.2.2,<2.0.0)",
-    "pillow (>=12.3.0,<13.0.0)"
+    "pillow (>=12.3.0,<13.0.0)",
+    "click (>=8.4.2,<9.0.0)"
 ]
+
+[project.scripts]
+anki-builder = "anki_builder.cli:main"
 
 
 [build-system]
