@@ -1,0 +1,28 @@
+[project]
+name = "anki-builder"
+version = "0.1.0"
+description = "A tool for building nice Anki decks"
+authors = [
+    {name = "Adam Saladino",email = "asaladino@users.noreply.github.com"}
+]
+license = "GNU"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "openai (>=2.46.0,<3.0.0)",
+    "requests (>=2.34.2,<3.0.0)",
+    "genanki (>=0.13.1,<0.14.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)",
+    "pillow (>=12.3.0,<13.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)",
+    "ruff (>=0.15.22,<0.16.0)"
+]
